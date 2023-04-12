@@ -1,8 +1,266 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Mono&display=swap');
 
+@media (max-width: 1920px) {
+    #click {
+        top: 20.5vh;
+    }
+}
+
+@media (max-height: 1000px) {
+    #click {
+        top: 21vh;
+    }
+}
+
+@media (max-width: 1366px) {
+    img.cv {
+        position: absolute;
+        left: 6.5vw;
+        top: 3vh;
+        max-height: 180px;
+    }
+
+    .title p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p.mid-text {
+        font-size: 0.8rem;
+
+    }
+
+    .item p {
+        font-size: 0.65rem;
+    }
+
+    .list#about {
+        padding-top: 0;
+        margin-top: -2rem;
+    }
+
+    .list#about p {
+        font-size: 0.9rem;
+    }
+
+    .col-20 {
+        margin-top: -4vh;
+    }
+
+    .col-35 {
+        margin-top: -4vh;
+    }
+
+    .col-35 .list .info {
+        margin-top: 1vh;
+    }
+
+    .col-35 .list .info .text .mid-text {
+        text-align: end;
+    }
+
+    .extra#click {
+        right: 15vw;
+        top: 17.5vh;
+    }
+
+    p.mid-text {
+        padding: 0.5rem;
+
+    }
+
+    .icon {
+        border-radius: 5px;
+        height: 10px;
+        width: auto;
+        margin: 0;
+    }
+
+
+    .medium-icon {
+        height: 25px;
+        width: auto;
+        margin-left: 5px;
+    }
+
+    .list-bottom .title {
+        margin-top: -10px;
+    }
+
+    .list-bottom .bar {
+        margin-bottom: 15px;
+    }
+
+    .list-bottom .progress {
+        height: 100%;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .list-bottom .items {
+        margin-right: -10px;
+    }
+
+    #tools .items {
+        margin-right: 10px;
+    }
+
+    .list-bottom .item {
+        margin-left: 10px;
+        padding: 0.5rem;
+    }
+
+    .extra#hover {
+        padding: 0;
+        margin: 0;
+        right: -1rem;
+        top: -4rem;
+        z-index: 2;
+        transform: rotate(20deg);
+        border-radius: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6.8vw;
+        height: 1.5rem;
+    }
+
+    .content#skills .items {
+        grid-template-columns: 45% 45%;
+        grid-gap: 5px;
+        margin-left: -15px;
+    }
+
+    .content#skills .item {
+        padding: 0.5rem;
+    }
+
+    .content#skills .item p {
+        font-size: 0.7rem;
+    }
+
+    .content#experience .items {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .content#experience #astro {
+        max-height: 80px;
+        max-width: 80px;
+        margin-top: 50px;
+    }
+
+
+    .content#experience p {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-top: 20px;
+    }
+
+    .content#experience a {
+        margin-top: 40px;
+        width: 18vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+
+
+}
+
+@media(max-width: 1536px) {
+
+    img.cv {
+        left: 5.6vw;
+    }
+
+    .list#about {
+        margin-top: -10px;
+    }
+
+    .list .bar {
+        margin-top: 10px;
+    }
+
+    .list p {
+        margin-bottom: -5px;
+        font-size: 0.9rem;
+    }
+
+    .col-20 {
+        margin-top: -4vh;
+    }
+
+
+    .col-35 {
+        margin-top: -4vh;
+    }
+
+    #click {
+        top: 19vh;
+        right: 14vw;
+    }
+
+    .list-bottom .title{
+        margin-top: -10px;
+    }
+
+    .list-bottom .item {
+        padding: 0.4rem;
+    }
+
+    .list-bottom .items{
+        margin-top: -20px;
+        margin-right: -20px;
+    }
+
+    .list-bottom .progress{
+        margin-top: 0px;
+        margin-right: 15px;
+        height: 90%;
+    }
+
+    .extra#hover{
+        right: 0rem;
+        top: 5rem;
+    }
+
+    #tools .items{
+        margin-right: 5px;
+    }
+
+    #skills .items{
+        margin-right: 5px;
+        width: 120%;
+    }
+
+    .content#experience{
+        margin-top: 25px;
+    }
+
+    #experience #astro{
+        max-height: 80px;
+        max-width: 80px;
+        margin-top: 10px;
+    }
+
+    .content#experience a {
+        margin-top: 30px;
+        width: 22vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
 * {
     padding: 0;
     margin: 0;
+    user-select: none;
 }
 
 body {
@@ -15,15 +273,24 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
 
 @keyframes glowing {
-    0% {box-shadow: 2px 2px 100px 10px white;}
-    50% {box-shadow: 2px 2px 100px 25px white;}
-    100% {box-shadow: 2px 2px 100px 10px white;}
+    0% {
+        box-shadow: 2px 2px 100px 10px white;
+    }
+
+    50% {
+        box-shadow: 2px 2px 100px 25px white;
+    }
+
+    100% {
+        box-shadow: 2px 2px 100px 10px white;
+    }
 }
 
 a {
@@ -37,7 +304,7 @@ a {
     transition: all 0.2s;
 }
 
-a:hover{
+a:hover {
     background-color: white;
     color: #1c1c3e;
 }
@@ -62,7 +329,7 @@ a:hover{
     z-index: 2;
 }
 
-.star{
+.star {
     position: absolute;
     box-shadow: 2px 2px 100px 15px white;
     animation-name: glowing;
@@ -70,81 +337,58 @@ a:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
-    
+
 }
 
-.star::before{
-    content:"";
-    position:absolute;
-    background:white;
-    width:0.33em;
-    height:0.383em;
-    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+.star::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 0.33em;
+    height: 0.383em;
+    transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
 }
 
-.star::after{
-    content:"";
-    position:absolute;
-    background:white;
-    width:0.33em;
-    height:0.383em;
-    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+.star::after {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 0.33em;
+    height: 0.383em;
+    transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
 }
 
-#first-star{
+#first-star {
     left: 70vw;
     top: 10vh;
     animation-delay: -2s;
 }
 
-#second-star{
+#second-star {
     left: 24vw;
     top: 80vh;
     animation-delay: -1s;
 }
 
-#third-star{
+#third-star {
     left: 74vw;
     top: 90vh;
     animation-delay: -2s;
 }
 
-#fourth-star{
+#fourth-star {
     left: 45vw;
     top: 40vh;
     animation-delay: -5s;
 }
 
-#fifth-star{
+#fifth-star {
     left: 90vw;
     top: 45vh;
     animation-delay: -4s;
 }
 
-/* 
-.space-1{
-    align-self: center;
-    justify-self: center;
-    max-height: 204px;
-    max-width: 204px;
-    border-radius: 50%;
-    border: 10px solid #1c1c3e;
-    z-index: 1;
-}
-
-.space-2{
-    position: relative;
-    align-self: center;
-    justify-self: center;
-    max-height: 226px;
-    max-width: 226px;
-    border-radius: 50%;
-    border: 20px solid #1c1c3e;
-    z-index: 1;
-} */
-
-
-.ring-0{
+.ring-0 {
     height: 550px;
     width: 550px;
     position: absolute;
@@ -160,7 +404,7 @@ a:hover{
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-delay: -10s; 
+    animation-delay: -10s;
 }
 
 .ring-1 {
@@ -250,34 +494,11 @@ a:hover{
     cursor: pointer;
 }
 
-#email:hover{
+#email:hover {
     text-shadow: 1px 1px 1rem white;
     font-weight: 550;
     transition: all ease-in-out 0.3s;
 }
-
-#first {
-    height: 4px;
-    width: 4px;
-    background-color: white;
-    border: 5px solid white;
-}
-
-#second{
-    height: 4px;
-    width: 4px;
-    background-color: white;
-    border: 5px solid white;
-}
-
-#third{
-    height: 6px;
-    width: 6px;
-    background-color: white;
-    border: 6px solid white;
-}
-
-
 
 .square {
     justify-self: center;
@@ -419,17 +640,19 @@ a:hover{
     height: 70%;
     width: 85%;
     z-index: 1;
-    /* background-color: rgba(255, 255, 255, 0.23);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    border: 1px solid rgba(255, 255, 255, 0.875); */
+}
+
+.list p {
+    margin-top: -10px;
 }
 
 
 .list#about {
     padding-top: 4rem;
     padding-left: 2rem;
+}
+.list#about .bar{
+    margin-bottom: 20px;
 }
 
 .bar {
@@ -509,7 +732,7 @@ p {
 
 /* FIXME: change ids used several times: icons, text */
 
-#text {
+.mid-text {
     width: 85%;
     margin-top: 0rem;
     text-align: justify;
@@ -525,19 +748,19 @@ p {
     margin-top: -20px;
 }
 
-#small-icon {
+.small-icon {
     height: 25px;
     width: auto;
     margin-left: 15px;
 }
 
-#medium-icon {
+.medium-icon {
     height: 40px;
     width: auto;
     margin-left: 10px;
 }
 
-#icon {
+.icon {
     border-radius: 3px;
     height: 20px;
     width: auto;
@@ -654,7 +877,7 @@ p {
     justify-content: start;
 }
 
-#tools .item img{
+#tools .item img {
     margin-right: 15px;
 }
 
@@ -676,7 +899,7 @@ p {
     margin: 0 15px 0 5px;
 }
 
-#experience .items{
+#experience .items {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -704,7 +927,8 @@ p {
 .col-25 .list .bar {
     margin: 0.5rem;
 }
-.hidden-item{
+
+.hidden-item {
     display: none;
     z-index: 2;
     width: 10vw;
@@ -712,26 +936,72 @@ p {
     border: 1px solid white;
     border-radius: 5%;
     position: absolute;
-    bottom:65px;
+    bottom: 65px;
     left: 45px;
 }
 
-#tools .hidden-item{
+#tools .hidden-item {
     left: -15px;
 }
 
-#skills .hidden-item{
+#skills .hidden-item {
     left: -25px;
     bottom: 70px;
 }
 
-.hidden-item p{
+.hidden-item p {
     color: white;
     font-size: 0.8rem;
     text-align: center;
 }
 
+.hidden-item#phone {
+    left: -40px;
+    bottom: 50px;
+}
+
+.hidden-item#email {
+    bottom: 40px;
+    left: 40px;
+}
+
+.extra {
+    width: 4vw;
+    background-color: #1c1c3e;
+    border: 1px solid white;
+    border-radius: 5%;
+    position: absolute;
+    right: 13.2vw;
+    top: 22.4vh;
+}
+
+
+.extra p {
+    margin-top: 0;
+    font-size: 0.6rem;
+}
+
+.extra#click {
+    top:19vh;
+}
+
 #name {
     color: white;
     font-size: 2rem;
+}
+
+#hover {
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    right: 1rem;
+    top: 6.4rem;
+    z-index: 3;
+    transform: rotate(20deg);
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 1.7rem;
 }
